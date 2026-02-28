@@ -1,0 +1,100 @@
+/* Modern CSS Reset — baseado no reset do Andy Bell
+   Fonte de referência: https://andy-bell.design/ */
+
+/* Reset básico e recomendável para projetos modernos */
+:where(html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,
+strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,
+tr,th,td,article,aside,canvas,details,embed,figure,figcaption,
+footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video){
+  all:unset;
+  display:revert;
+}
+
+/* Box sizing inheritance */
+*, :where(*::before), :where(*::after) {
+  box-sizing: inherit;
+}
+
+html {
+  line-height: 1.15; /* Melhor leitura por padrão */
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: revert;
+  background: revert;
+  color-scheme: light dark;
+}
+
+:where(html,body) {
+  height: 100%;
+}
+
+/* Tipografia e form controls herdam fonte */
+a, button, input, textarea, select {
+  font: inherit;
+}
+
+/* Links conservam estilo do usuário agente por padrão */
+a {
+  color: revert;
+  text-decoration: revert;
+}
+
+/* Imagens e mídias responsivas */
+img, svg, picture, video, canvas, iframe, embed, object {
+  display: block;
+  max-width: 100%;
+}
+
+/* Listas, tabelas e formulários */
+ol, ul, menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:where(h1,h2,h3,h4,h5,h6,p,figure,blockquote,dl,dd) {
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Manter comportamento de foco por padrão; projetos podem customizar */
+:where(:focus-visible) {
+  outline: revert;
+}
+
+/* Pequena utilidade que evita que elementos se estendam fora do layout */
+:where(img,video,canvas,iframe,embed,object) {
+  max-width: 100%;
+}
+
+/* Fim do reset */

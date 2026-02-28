@@ -25,12 +25,7 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  color: revert;
-  background: revert;
-  color-scheme: light dark;
-}
+
 
 :where(html,body) {
   height: 100%;
@@ -44,7 +39,7 @@ a, button, input, textarea, select {
 /* Links conservam estilo do usuário agente por padrão */
 a {
   color: revert;
-  text-decoration: revert;
+  text-decoration: none;
 }
 
 /* Imagens e mídias responsivas */

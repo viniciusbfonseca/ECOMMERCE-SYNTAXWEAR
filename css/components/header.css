@@ -29,14 +29,15 @@
     font-size: 1.25rem;
 }
 
-.nav-center a:hover, .nav-right a:hover{
+.nav-center a:hover, 
+.nav-right a:hover{
     color: #7c3aed;
 }
 
 .nav-right ul{
     display: flex;
     gap: 2.5rem;   
-    align-items: end;
+    align-items: center;
 }
 
 .nav-right img {

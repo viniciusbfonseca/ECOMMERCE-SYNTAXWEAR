@@ -49,10 +49,10 @@ img, svg, picture, video, canvas, iframe, embed, object {
 }
 
 /* Listas, tabelas e formulários */
-ol, ul, menu {
+ol, ul{
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 table {

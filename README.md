@@ -48,4 +48,4 @@ Como este é um site estático, não há necessidade de instalação de dependê
 2. Navegue até a pasta do projeto.
 3. Abra o arquivo `index.html` no seu navegador.
 
-
+DEPLOY : https://viniciusbfonseca.github.io/ECOMMERCE-SYNTAXWEAR/
